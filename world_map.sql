@@ -1,0 +1,10 @@
+CREATE DATABASE world_map;
+
+CREATE TABLE pins (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    latitude DOUBLE NOT NULL,
+    longitude DOUBLE NOT NULL,
+    message TEXT NOT NULL,
+    color VARCHAR(10) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
